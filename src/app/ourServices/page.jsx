@@ -124,7 +124,7 @@ const page = () => {
       </div>
       <div className='  text-p w-full flex gap-8 justify-center md:justify-end px-2 py-4'>
         <button className='px-2 py-2 md:px-8 md:py-4  bg-tercero text-secondary cursor-pointer rounded font-semibold text-[1rem] md:text-lg'>
-          Contactanos
+          Contáctanos
         </button>
         <button className='px-2 py-2 md:px-8 md:py-4  bg-tercero text-secondary cursor-pointer rounded font-semibold text-[1rem] md:text-lg'>
           ¡Pedí tu muestra gratis!

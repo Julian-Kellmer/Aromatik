@@ -101,9 +101,9 @@ const Index = () => {
         <button className='flex-1 px-4 py-2 bg-tercero text-secondary cursor-pointer rounded font-semibold text-[1rem]'>
           ¡Pedí el tuyo!
         </button>
-        <button className='px-2 py-2 bg-tercero text-secondary cursor-pointer rounded font-semibold text-[1rem]'>
+        {/* <button className='px-2 py-2 bg-tercero text-secondary cursor-pointer rounded font-semibold text-[1rem]'>
           Obtene tu muestra gratis
-        </button>
+        </button> */}
       </div>
     </section>
   )

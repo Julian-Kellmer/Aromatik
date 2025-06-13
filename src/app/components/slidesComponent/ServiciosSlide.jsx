@@ -1,8 +1,12 @@
 import Image from 'next/image'
 
 const ServicioSlide = ({ data, onClick }) => {
+  const truncatedData =
+    data.desc.length > 100 ? data.desc.slice(0, 100) + '...' : data.desc
   return (
-    <div onClick={()=>onClick(data)} className=' flex flex-col items-start w-full bg-tercero rounded-2xl p-4 cursor-pointer'>
+    <div
+      onClick={() => onClick(data)}
+      className=' flex flex-col items-start w-full bg-tercero rounded-2xl p-4 cursor-pointer'>
       <div className='relative w-full aspect-square overflow-hidden rounded-t-2xl rounded-br-4xl object-bottom '>
         <Image
           src={data.imgSit[0]}
@@ -17,7 +21,7 @@ const ServicioSlide = ({ data, onClick }) => {
           {data.nombre}
         </span>
       </div>
-      <p className='py-4 '>{data.desc}</p>
+      <p className='py-4 '>{`${truncatedData} Ver más`}</p>
     </div>
   )
 }

@@ -62,7 +62,7 @@ const RollingNumber = ({ number = 0 }) => {
       {finalDigits.map((digit, index) => (
         <div
           key={index}
-          className='overflow-hidden h-[6rem] w-[4rem] md:w-[3rem]'>
+          className='overflow-hidden h-[6rem] w-[2rem] md:w-[3rem]'>
           <div
             className='flex flex-col'
             ref={(el) => (boxesRef.current[index] = el)}>
@@ -70,7 +70,7 @@ const RollingNumber = ({ number = 0 }) => {
             {Array.from({ length: 10 }, (_, i) => (
               <div
                 key={i}
-                className='h-[6rem] w-[4rem] md:w-[3rem] flex items-center justify-center text-[3.2rem] md:text-[3.8rem]  font-bold text-secondary'>
+                className='h-[6rem] w-[2rem] md:w-[3rem] flex items-center justify-center text-[3.2rem] md:text-[3.8rem]  font-bold text-secondary'>
                 {i}
               </div>
             ))}
