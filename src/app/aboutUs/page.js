@@ -56,7 +56,7 @@ const Page = () => {
   }, [])
 
   return (
-    <section ref={sectionRef} className='px-2 py-4 lg:px-16 lg:mt-8 gap-16 flex flex-col'>
+    <section id='aboutUs' ref={sectionRef} className='px-2 py-4 lg:px-16 lg:mt-8 gap-16 flex flex-col'>
       <div className='flex flex-col md:flex-row justify-center gap-4 '>
         <div className='flex justify-center lg:justify-start flex-1 order-2 lg:order-1'>
           <Image

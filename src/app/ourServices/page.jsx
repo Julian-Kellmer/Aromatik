@@ -100,7 +100,7 @@ const page = () => {
     setSelectedService(null)
   }
   return (
-    <section className=' relative px-4 md:px-16 flex flex-col mx-auto  w-full '>
+    <section id='ourServices' className=' relative px-4 md:px-16 flex flex-col mx-auto  w-full '>
       {isOpenService && (
         <Modal
           data={selectedService}

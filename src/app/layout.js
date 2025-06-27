@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         className={`${inter.variable}  antialiased flex flex-col md:gap-16 relative`}>
           <Header/>
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   )

@@ -43,7 +43,7 @@ const Page = () => {
   }, [])
 
   return (
-    <section className='2xl:w-[calc(100dvw-15px)]'>
+    <section  id='hero' >
       <div
         ref={sectionRef}
         className='px-4 w-full h-[95vh] md:h-screen relative bg-no-repeat bg-cover bg-bottom md:rounded-b-[3rem] rounded-b-xl'

@@ -44,6 +44,7 @@ const Index = () => {
 
   return (
     <section
+    id='homeProducts'
       ref={sectionRef}
       className='container mx-auto flex flex-col lg:flex-row md:mt-16 justify-center items-center'>
       <div

@@ -7,11 +7,11 @@ import Aromas from './aromas'
 export default function Home() {
   return (
     <>
-      <Hero />
-      <AboutUs />
-      <OurServices />
-      <HomeProducts />
-      <Aromas />
+      <Hero  />
+      <AboutUs  />
+      <OurServices  />
+      <HomeProducts  />
+      <Aromas  />
     </>
   )
 }
