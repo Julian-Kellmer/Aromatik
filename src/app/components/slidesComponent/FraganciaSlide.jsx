@@ -21,7 +21,7 @@ const FraganciaSlide = ({ data }) => {
 
             <p className=' md:flex-3 text-black/50'>{data.desc}</p>
           </div>
-          <div className=' w-1/6 aspect-square bg-white rounded-full flex items-center justify-center'>
+          <div className=' w-1/6 aspect-square  rounded-full flex items-center justify-center'>
             <img
               src='/logo/logo.svg'
               alt='logo'
