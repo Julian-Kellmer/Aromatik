@@ -16,15 +16,25 @@ const Header = () => {
 
   return (
     <header className='fixed top-0 w-full z-50 px-4 md:px-10 py-3 bg-transparent'>
-      <div className='max-w-6xl mx-auto bg-[#f8ebf8] rounded-xl shadow-sm flex items-center justify-between px-6 py-3'>
-        <Image
-        alt='Logo'
-          src='/logo/logo-removebg.png'
-          href='#home'
-          className='text-secondary font-semibold text-xl'
-          width={100}
-          height={0}
-        />
+      <div className='max-w-6xl mx-auto bg-[#f8ebf8] rounded-xl shadow-sm flex items-center justify-between px-6 py-1'>
+        <div className='flex'>
+          <Image
+            alt='Logo'
+            src='/logo/logo.svg'
+            href='#home'
+            className='text-secondary font-semibold text-xl'
+            width={20}
+            height={0}
+          />
+          <Image
+            alt='Logo'
+            src='/logo/logo-removebg.png'
+            href='#home'
+            className='text-secondary font-semibold text-xl'
+            width={100}
+            height={0}
+          />
+        </div>
 
         {/* Desktop Nav */}
         <nav className='hidden md:flex gap-6 text-sm text-black/80 font-medium text-[1rem]'>

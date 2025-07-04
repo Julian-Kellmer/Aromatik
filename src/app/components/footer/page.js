@@ -1,28 +1,45 @@
-// components/Footer.jsx
+import Image from 'next/image'
 const Footer = () => {
   return (
     <footer
       id='footer'
-      className='bg-[#f8ebf8] text-black py-10 px-6 md:px-12 mt-8'>
+      className='bg-[#f8ebf8] text-black pb-10 pt-4 px-6 md:px-12 mt-8'>
       {/* Sección principal */}
       <div className='max-w-6xl mx-auto grid md:grid-cols-3 gap-8 border-b border-black/40 pb-8'>
         {/* Columna izquierda: Datos de contacto */}
-        <div>
-          <h3 className='font-semibold text-lg mb-4'>Aromatic</h3>
-          <div className='flex flex-col gap-2 text-sm'>
-            <div className='flex justify-between max-w-[250px]'>
+        <div className='w-full flex-col justify-between'>
+          <div  className='flex'>
+            <Image
+              alt='Logo'
+              src='/logo/logo-removebg.png'
+              href='#home'
+              className='text-secondary font-semibold text-xl'
+              width={100}
+              height={0}
+            />
+            <Image
+              alt='Logo'
+              src='/logo/logo.svg'
+              href='#home'
+              className='text-secondary font-semibold text-xl'
+              width={20}
+              height={0}
+            />
+          </div>
+          <div className='flex flex-col gap-2 text-sm px-2'>
+            <div className='flex justify-between w-full'>
               <span className='font-medium'>E-mail</span>
               <span>ventas@aromaticargentina.com</span>
             </div>
-            <div className='flex justify-between max-w-[250px]'>
+            <div className='flex justify-between w-w-full'>
               <span className='font-medium'>Telefono</span>
               <span>+54 11 7105 0112</span>
             </div>
-            <div className='flex justify-between max-w-[250px]'>
+            <div className='flex justify-between w-full'>
               <span className='font-medium'>Instagram</span>
               <span>@Aromatic.argentina</span>
             </div>
-            <div className='flex justify-between max-w-[250px]'>
+            <div className='flex justify-between w-full'>
               <span className='font-medium'>TikTok</span>
               <span>@Aromatic.argentina</span>
             </div>

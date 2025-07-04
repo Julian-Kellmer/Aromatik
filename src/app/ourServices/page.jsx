@@ -8,43 +8,23 @@ const OPTIONS = { align: 'start' }
 
 const infoServicios = [
   {
-    id: 1,
-    nombre: 'Secamanos',
+    id: 5,
+    nombre: 'OV10',
     imgSit: [
-      '/servicesImg/secamanos/situacion/secamanos-situacion-1.jpg',
-      '/servicesImg/secamanos/situacion/secamanos-situacion-2.jpg',
+      '/servicesImg/OV10/situacion/OV10-situacion-1.png',
+      '/servicesImg/OV10/situacion/OV10-situacion-2.jpg',
+      '/servicesImg/OV10/situacion/OV10-situacion-3.jpg',
     ],
-    imgBlanco: ['/servicesImg/secamanos/blanco/secamanos_a.jpg'],
-    desc: 'Secamanos con Gabinete de acero inoxidable y accionamiento por sensor infrarrojo. Con nuestro servicio te olvidas de comprar secamanos, nosotros cubrimos el equipo y realizamos el mantenimiento mes a mes.',
-    potencia: 'Voltaje 110/220 - Potencia 1000W - motor universal 23.000RPM',
-    dimensiones: '320 x 290 x 170 mm',
-  },
-  {
-    id: 2,
-    nombre: 'Dispenser',
-    imgSit: [
-      '/servicesImg/dispenser/situacion/dispenser-situacion-1.jpg',
-      '/servicesImg/dispenser/situacion/dispenser-situacion-2.jpg',
+    imgBlanco: [
+      '/servicesImg/OV10/blanco/OV10-a.jpg',
+      '/servicesImg/OV10/blanco/OV10-b.jpg',
     ],
-    imgBlanco: ['/servicesImg/dispenser/blanco/dispenser-a.jpg'],
-    desc: 'Dispensador inteligente de ambientes, para cargas de aerosol. Funciona con dos baterías de 1.5 V. Posee un indicador luminoso de estado de cargas de las mismas y selector de frecuencia de dosificación.',
+    desc: 'Difusor de aromas para grandes áreas, cuenta con un sistema de aromatización ambiental con nebulizador programable de gran alcance. Control remoto por Wifi / Bluetooth desde tu celular. Con opción de personalizar el tiempo de funcionamiento: Inicio y finalización de la operación y frecuencia de descarga. Funciona conectado a un toma corriente común mediante un transformador de 12V',
+    dimensiones: '300 x 115 x 250 mm',
+    potencia: '15W -  Capacidad 1000ml',
+    color: 'Blanco o Negro segun dispoinibilidad',
     servicio:
-      ' El servicio se efectuará cada 30 días por personal especializado de Aromatic, en el mismo procederán a realizar el recambio de las fragancias en Aerosol , pilas e higienización de los equipos . Todas nuestras fragancias están habilitadas .',
-  },
-  {
-    id: 3,
-    nombre: 'Migitorio',
-    imgSit: [
-      '/servicesImg/migitorio/situacion/migitorio-situacion-2.jpg',
-      '/servicesImg/migitorio/situacion/migitorio-situacion-1.jpg',
-    ],
-    imgBlanco: ['/servicesImg/migitorio/blanco/migitorio-a.jpg'],
-    desc: 'Elimina los malos olores y ejerce una potente acción bacteriostática dentro del inodoro o mingitorio las 24 horas del día controlando la proliferación de bacterias.',
-    material: 'Fabricado en Plástico 100% polipropileno.',
-    dimensiones: '120 x 70 x 230 mm',
-    servicio:
-      'se efectuará cada 30 días, por personal especializado de Aromatic. Realizando el cambio de fragancias e higienización de los equipos.',
-    color: 'Blanco',
+    'Se efectuará cada 30 días, por personal especializado de Aromatic. Realizando el cambio de fragancias e higienización de los equipos.',
   },
   {
     id: 4,
@@ -63,26 +43,46 @@ const infoServicios = [
     potencia: '15W -  Capacidad 1000ml',
     color: 'Blanco ',
     servicio:
-      'se efectuará cada 30 días, por personal especializado de Aromatic. Realizando el cambio de fragancias e higienización de los equipos.',
+    'se efectuará cada 30 días, por personal especializado de Aromatic. Realizando el cambio de fragancias e higienización de los equipos.',
   },
   {
-    id: 5,
-    nombre: 'OV10',
+    id: 2,
+    nombre: 'Dispenser',
     imgSit: [
-      '/servicesImg/OV10/situacion/OV10-situacion-1.png',
-      '/servicesImg/OV10/situacion/OV10-situacion-2.jpg',
-      '/servicesImg/OV10/situacion/OV10-situacion-3.jpg',
+      '/servicesImg/dispenser/situacion/dispenser-situacion-1.jpg',
+      '/servicesImg/dispenser/situacion/dispenser-situacion-2.jpg',
     ],
-    imgBlanco: [
-      '/servicesImg/OV10/blanco/OV10-a.jpg',
-      '/servicesImg/OV10/blanco/OV10-b.jpg',
-    ],
-    desc: 'Difusor de aromas para grandes áreas, cuenta con un sistema de aromatización ambiental con nebulizador programable de gran alcance. Control remoto por Wifi / Bluetooth desde tu celular. Con opción de personalizar el tiempo de funcionamiento: Inicio y finalización de la operación y frecuencia de descarga. Funciona conectado a un toma corriente común mediante un transformador de 12V',
-    dimensiones: '300 x 115 x 250 mm',
-    potencia: '15W -  Capacidad 1000ml',
-    color: 'Blanco o Negro segun dispoinibilidad',
+    imgBlanco: ['/servicesImg/dispenser/blanco/dispenser-a.jpg'],
+    desc: 'Dispensador inteligente de ambientes, para cargas de aerosol. Funciona con dos baterías de 1.5 V. Posee un indicador luminoso de estado de cargas de las mismas y selector de frecuencia de dosificación.',
     servicio:
-      'Se efectuará cada 30 días, por personal especializado de Aromatic. Realizando el cambio de fragancias e higienización de los equipos.',
+    ' El servicio se efectuará cada 30 días por personal especializado de Aromatic, en el mismo procederán a realizar el recambio de las fragancias en Aerosol , pilas e higienización de los equipos . Todas nuestras fragancias están habilitadas .',
+  },
+  {
+    id: 3,
+    nombre: 'Migitorio',
+    imgSit: [
+      '/servicesImg/migitorio/situacion/migitorio-situacion-2.jpg',
+      '/servicesImg/migitorio/situacion/migitorio-situacion-1.jpg',
+    ],
+    imgBlanco: ['/servicesImg/migitorio/blanco/migitorio-a.jpg'],
+    desc: 'Elimina los malos olores y ejerce una potente acción bacteriostática dentro del inodoro o mingitorio las 24 horas del día controlando la proliferación de bacterias.',
+    material: 'Fabricado en Plástico 100% polipropileno.',
+    dimensiones: '120 x 70 x 230 mm',
+    servicio:
+    'se efectuará cada 30 días, por personal especializado de Aromatic. Realizando el cambio de fragancias e higienización de los equipos.',
+    color: 'Blanco',
+  },
+  {
+    id: 1,
+    nombre: 'Secamanos',
+    imgSit: [
+      '/servicesImg/secamanos/situacion/secamanos-situacion-1.jpg',
+      '/servicesImg/secamanos/situacion/secamanos-situacion-2.jpg',
+    ],
+    imgBlanco: ['/servicesImg/secamanos/blanco/secamanos_a.jpg'],
+    desc: 'Secamanos con Gabinete de acero inoxidable y accionamiento por sensor infrarrojo. Con nuestro servicio te olvidas de comprar secamanos, nosotros cubrimos el equipo y realizamos el mantenimiento mes a mes.',
+    potencia: 'Voltaje 110/220 - Potencia 1000W - motor universal 23.000RPM',
+    dimensiones: '320 x 290 x 170 mm',
   },
 ]
 const page = () => {
