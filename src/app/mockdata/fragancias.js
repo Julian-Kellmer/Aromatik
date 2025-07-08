@@ -19,7 +19,7 @@ const aromas = [
   },
   {
     id: 4,
-    nombre: 'Sunkinssed',
+    nombre: 'Sunnygit',
     img: '/fragancias/sunkissed.jpeg',
     desc: 'Flor de azahar, sal marina y vainilla',
   },
