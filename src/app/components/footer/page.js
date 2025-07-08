@@ -1,5 +1,12 @@
+'use client'
 import Image from 'next/image'
 const Footer = () => {
+  const handleWhatsAppRedirect = ({ message }) => {
+    const encodedMessage = encodeURIComponent(message)
+    const whatsappUrl = `https://wa.me/+5491171050112?text=${encodedMessage}`
+
+    window.open(whatsappUrl, '_blank')
+  }
   return (
     <footer
       id='footer'
@@ -8,7 +15,7 @@ const Footer = () => {
       <div className='max-w-6xl mx-auto grid md:grid-cols-3 gap-8 border-b border-black/40 pb-8'>
         {/* Columna izquierda: Datos de contacto */}
         <div className='w-full flex-col justify-between'>
-          <div  className='flex'>
+          <div className='flex'>
             <Image
               alt='Logo'
               src='/logo/logo-removebg.png'
@@ -55,11 +62,16 @@ const Footer = () => {
             Aromatiza tu espacio ahora con Aromatic
           </h4>
           <div className='flex flex-col sm:flex-row gap-3'>
-            <a
+            <button
+              onClick={() =>
+                handleWhatsAppRedirect({
+                  message: 'Hola estoy interesado, que tengan buen dia.',
+                })
+              }
               href='#contacto'
-              className='bg-[#3c0a4d] text-white text-sm px-4 py-2 rounded-md text-center'>
+              className='bg-[#3c0a4d] text-white text-sm px-4 py-2 rounded-md text-center cursor-pointer'>
               Contactá tu prueba tu gratis
-            </a>
+            </button>
             {/* <a
               href="#contacto"
               className="text-sm underline underline-offset-2 text-[#3c0a4d]"

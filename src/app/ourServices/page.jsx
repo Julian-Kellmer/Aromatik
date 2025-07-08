@@ -85,9 +85,7 @@ const infoServicios = [
     dimensiones: '320 x 290 x 170 mm',
   },
 ]
-const handleWhatsAppRedirect = () => {
-  const message = 'Hola, estoy interesado en la muestra gratis'
-
+const handleWhatsAppRedirect = ({ message }) => {
   const encodedMessage = encodeURIComponent(message)
   const whatsappUrl = `https://wa.me/+5491171050112?text=${encodedMessage}`
 
@@ -127,17 +125,33 @@ const page = () => {
           SlideComponent={(props) => (
             <ServicioSlide
               {...props}
-              onClick={handleOpenModal}
+              onClick={() =>
+                handleWhatsAppRedirect({
+                  message:
+                    'Hola, me gustaría saber más sobre el servicio gratis de Aromatic.',
+                })
+              }
             />
           )}
         />
       </div>
       <div className='  text-p w-full flex gap-8 justify-center md:justify-end px-2 py-4'>
-        <button className='px-2 py-2 md:px-8 md:py-4  bg-tercero text-secondary cursor-pointer rounded font-semibold text-[1rem] md:text-lg'>
+        <button
+          onClick={() =>
+            handleWhatsAppRedirect({
+              message: 'Hola, estoy interaso en sus servicios.',
+            })
+          }
+          className='px-2 py-2 md:px-8 md:py-4  bg-tercero text-secondary cursor-pointer rounded font-semibold text-[1rem] md:text-lg'>
           Contáctanos
         </button>
         <button
-          onClick={handleWhatsAppRedirect}
+          onClick={() =>
+            handleWhatsAppRedirect({
+              message:
+                'Hola, me gustaría pedir una muestra gratis de Aromatic.',
+            })
+          }
           className='px-2 py-2 md:px-8 md:py-4  bg-tercero text-secondary cursor-pointer rounded font-semibold text-[1rem] md:text-lg'>
           ¡Pedí tu muestra gratis!
         </button>

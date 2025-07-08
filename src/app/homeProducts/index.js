@@ -10,7 +10,12 @@ const Index = () => {
   const sectionRef = useRef(null)
   const textRef = useRef(null)
   const imageRef = useRef(null)
+  const handleWhatsAppRedirect = ({ message }) => {
+    const encodedMessage = encodeURIComponent(message)
+    const whatsappUrl = `https://wa.me/+5491171050112?text=${encodedMessage}`
 
+    window.open(whatsappUrl, '_blank')
+  }
   useEffect(() => {
     const ctx = gsap.context(() => {
       // Texto (fade y slide desde la izquierda)
@@ -44,7 +49,7 @@ const Index = () => {
 
   return (
     <section
-    id='homeProducts'
+      id='homeProducts'
       ref={sectionRef}
       className='container mx-auto flex flex-col lg:flex-row md:mt-16 justify-center items-center'>
       <div
@@ -70,7 +75,14 @@ const Index = () => {
           Color blanco
         </p>
         <div className='hidden lg:flex gap-16 text-p'>
-          <button className='px-4 py-2 bg-tercero text-secondary cursor-pointer rounded font-semibold'>
+          <button
+            onClick={() =>
+              handleWhatsAppRedirect({
+                message:
+                  'Hola buen dia, me gustaria consultar por su producto para el hogar',
+              })
+            }
+            className='px-4 py-2 bg-tercero text-secondary cursor-pointer rounded font-semibold'>
             ¡Pedí el tuyo!
           </button>
           {/* <button className='px-4 py-2 bg-tercero text-secondary cursor-pointer rounded font-semibold'>
