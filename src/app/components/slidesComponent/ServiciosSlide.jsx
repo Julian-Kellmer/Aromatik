@@ -6,7 +6,7 @@ const ServicioSlide = ({ data, onClick }) => {
   return (
     <div
       onClick={() => onClick(data)}
-      className=' flex flex-col items-start w-full bg-tercero rounded-2xl p-4 cursor-pointer'>
+      className=' flex flex-col items-start w-full bg-tercero rounded-2xl p-4 cursor-pointer min-h-full'>
       <div className='relative w-full aspect-square overflow-hidden rounded-t-2xl rounded-br-4xl object-bottom '>
         <Image
           src={data.imgSit[0]}
