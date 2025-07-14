@@ -1,7 +1,7 @@
 import Image from 'next/image'
 const FraganciaSlide = ({ data }) => {
   return (
-    <div className=' flex flex-col items-start w-full bg-tercero rounded-2xl'>
+    <div className=' flex flex-col items-start w-full bg-tercero rounded-2xl min-h-full'>
       <div className='relative w-full aspect-square overflow-hidden  flex justify-center object-bottom '>
         <Image
           src={data.img}
@@ -14,8 +14,7 @@ const FraganciaSlide = ({ data }) => {
       <div className='flex flex-col gap-2  w-full'>
         <div className='flex w-full p-2  items-center justify-between'>
           <div className=' px-2 flex flex-col items-start gap-2 '>
-            <span
-              className=' font-semibold text-subtitle capitalize'>
+            <span className=' font-semibold text-subtitle capitalize'>
               {data.nombre}
             </span>
 
