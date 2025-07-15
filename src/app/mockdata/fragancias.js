@@ -1,7 +1,7 @@
 const aromas = [
   {
     id: 1,
-    nombre: 'Maria Cher',
+    nombre: 'M.Cher',
     img: '/fragancias/mariacher.jpeg',
     desc: 'Neroli, Bergamota y Almizcle',
   },
@@ -19,7 +19,7 @@ const aromas = [
   },
   {
     id: 4,
-    nombre: 'Sunnygit',
+    nombre: 'Sunny',
     img: '/fragancias/sunkissed.jpeg',
     desc: 'Flor de azahar, sal marina y vainilla',
   },
@@ -31,7 +31,7 @@ const aromas = [
   },
   {
     id: 6,
-    nombre: 'Te verde',
+    nombre: 'Green Tea',
     img: '/fragancias/teverde.jpeg',
     desc: 'Té verde, lima y ámbar',
   },
@@ -58,6 +58,12 @@ const aromas = [
     nombre: 'Citrus',
     img: '/fragancias/citus.jpeg',
     desc: 'Bergamota, lima y naranja',
+  },
+  {
+    id: 11,
+    nombre: 'Green Lemon',
+    img: '/fragancias/Limon,Lima,Bergamota.png',
+    desc: 'Limon,Lima Bergamota',
   },
 ]
 export default aromas
