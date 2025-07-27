@@ -1,7 +1,7 @@
 import Header from './components/Header/page'
-import Hero from './hero/page'
-import AboutUs from './aboutUs/page'
-import OurServices from './ourServices/page'
+import Hero from './hero'
+import AboutUs from './aboutUs'
+import OurServices from './ourServices'
 import HomeProducts from './homeProducts'
 import Aromas from './aromas'
 export default function Home() {
