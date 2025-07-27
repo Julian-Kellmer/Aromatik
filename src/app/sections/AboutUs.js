@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import AromaticNumbers from '../components/AromaticNumbers/page'
+import AromaticNumbers from '../components/aromaticNumbers'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -56,7 +56,10 @@ const Page = () => {
   }, [])
 
   return (
-    <section id='aboutUs' ref={sectionRef} className='px-2 py-4 lg:px-16 lg:mt-8 gap-16 flex flex-col'>
+    <section
+      id='aboutUs'
+      ref={sectionRef}
+      className='px-2 py-4 lg:px-16 lg:mt-8 gap-16 flex flex-col'>
       <div className='flex flex-col md:flex-row justify-center gap-4 '>
         <div className='flex justify-center lg:justify-start flex-1 order-2 lg:order-1'>
           <Image
@@ -70,15 +73,13 @@ const Page = () => {
         </div>
         <h3
           ref={titleRef}
-          className='md:px-8 order-1 md:hidden self-start text-title lg:text-lgTitle tracking-tighter font-medium'
-        >
+          className='md:px-8 order-1 md:hidden self-start text-title lg:text-lgTitle tracking-tighter font-medium'>
           Sobre nosotros
         </h3>
         <div className='flex flex-col text-black flex-1 justify-center order-3 gap-4'>
           <h3
             ref={titleRef}
-            className='hidden md:block text-title md:text-mdTitle lg:text-lgTitle font-medium leading-none'
-          >
+            className='hidden md:block text-title md:text-mdTitle lg:text-lgTitle font-medium leading-none'>
             Sobre nosotros
           </h3>
           <div className='flex flex-col gap-4 text-[1.2rem] lg:text-p font-light'>
@@ -87,7 +88,9 @@ const Page = () => {
               'Brindamos excelencia y calidad, tanto como para el usuario como para la empresa. Actualmente trabajamos con diferentes laboratorios especializados en el rubro, de primera calidad, y contamos con muchísimas fragancias dentro de nuestra cartera.',
               'En Aromatic creemos que el aroma y el olfato son puntos de inflexión a la hora de conquistar un nuevo cliente.',
             ].map((text, i) => (
-              <p key={i} ref={el => (paragraphsRef.current[i] = el)}>
+              <p
+                key={i}
+                ref={(el) => (paragraphsRef.current[i] = el)}>
                 {text}
               </p>
             ))}

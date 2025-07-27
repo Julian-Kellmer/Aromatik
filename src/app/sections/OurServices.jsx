@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import EmblaCarousel from '../components/EmblaCarousel/EmblaCarousel'
 import ServicioSlide from '../components/slidesComponent/ServiciosSlide'
-import Modal from '../components/Modal'
+import Modal from '../components/modal'
 
 const OPTIONS = { align: 'start' }
 

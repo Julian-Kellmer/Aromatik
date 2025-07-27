@@ -1,5 +1,5 @@
 import React from 'react'
-import RollingNumber from '../rollingNumbers'
+import RollingNumber from './RollingNumbers'
 
 const infoNumber = [
   { number: 25, text: 'Años de experiencia' },
@@ -25,7 +25,9 @@ const page = () => {
                   +
                 </span>
                 <RollingNumber number={item.number} />
-                <span className='self-center text-[3rem] font-bold text-secondary'>{item.number === 12 ? 'k':''} </span>
+                <span className='self-center text-[3rem] font-bold text-secondary'>
+                  {item.number === 12 ? 'k' : ''}{' '}
+                </span>
               </div>
               <h6 className='text-[1.3rem] lg:text-[1.2rem] text-secondary'>
                 {item.text}
