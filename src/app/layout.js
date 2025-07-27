@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono, Inter } from 'next/font/google'
 import './globals.css'
-import Header from './components/Header/page'
-import Footer from './components/footer/page'
+import Header from './components/Header'
+import Footer from './components/footer'
 
 const inter = Inter({
   variable: '--font-Inter',
@@ -14,7 +14,6 @@ export const metadata = {
   icons: {
     icon: '/logo/logo.svg',
   },
-    
 }
 
 export default function RootLayout({ children }) {
@@ -22,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang='es'>
       <body
         className={`${inter.variable}  antialiased flex flex-col md:gap-16 relative`}>
-          <Header/>
+        <Header />
         {children}
         <Footer />
       </body>

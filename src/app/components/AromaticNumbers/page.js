@@ -1,5 +1,5 @@
 import React from 'react'
-import RollingNumber from '../rollingNumbers/page'
+import RollingNumber from '../rollingNumbers'
 
 const infoNumber = [
   { number: 25, text: 'Años de experiencia' },
