@@ -27,7 +27,7 @@ const Header = () => {
             height={0}
           />
           <Image
-            alt='Logo'
+            alt='Logo Text'
             src='/logo/logo-removebg.png'
             href='#home'
             className='text-secondary font-semibold text-xl'
