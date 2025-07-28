@@ -139,7 +139,7 @@ const page = () => {
         <button
           onClick={() =>
             handleWhatsAppRedirect({
-              message: 'Hola, estoy interaso en sus servicios.',
+              message: 'Hola, estoy interesado en sus servicios.',
             })
           }
           className='px-2 py-2 md:px-8 md:py-4  bg-tercero text-secondary cursor-pointer rounded font-semibold text-[1rem] md:text-lg'>
