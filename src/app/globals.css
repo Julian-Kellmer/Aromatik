@@ -21,7 +21,6 @@
   --text-subtitle: 1.2rem;
   --text-p: 1.2rem;
   --text-largeP: 1.5rem;
- 
 }
 
 body {
@@ -29,4 +28,6 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
-
+html {
+  scroll-behavior: smooth;
+}

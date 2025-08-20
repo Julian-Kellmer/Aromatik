@@ -43,7 +43,7 @@ const Page = () => {
   }, [])
 
   return (
-    <section  id='hero' >
+    <section id='hero'>
       <div
         ref={sectionRef}
         className='px-4 w-full h-[95vh] md:h-screen relative bg-no-repeat bg-cover bg-bottom md:rounded-b-[3rem] rounded-b-xl'
@@ -60,13 +60,14 @@ const Page = () => {
               Aromas únicos, experiencias reales
             </h2>
             <p className='text-white/80 text-[1.2rem] lg:text-lgSubtitle max-w-full lg:max-w-3/4 font-light lg:text-center'>
-              Creamos y transformamos espacios con una escencia auténtica y duradera
+              Creamos y transformamos espacios con una escencia auténtica y
+              duradera
             </p>
           </div>
           <button
             ref={buttonRef}
             className='px-6 py-2 lg:py-2 bg-tercero text-secondary font-regular rounded-xl md:text-p text-lg cursor-pointer self-end lg:self-center'>
-            Ver más
+            <a href='#aboutUs'>Ver más</a>
           </button>
         </div>
       </div>
